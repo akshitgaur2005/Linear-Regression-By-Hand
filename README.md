@@ -9,4 +9,4 @@ Just me trying things out and keeping what works.
 
 :smiley: Though in all seriousness, this is very very unoptimised and I may return to it some other day to try my hand at optimisation but I neither have the energy nor the technical know-how to take an attempt at this.
 
-This model achieves a score of 0.66931 in House Price Prediction dataset which would give it nearly 4500 global rank (not too bad for a simple linear model, I would know the rank exactly had I not already achieved the high score of 0.14935 with rank 2527 global :coolguy:).
+This model achieves a score of 0.66931 in House Price Prediction dataset which would give it nearly 4500 global rank (not too bad for a simple linear model, I would know the rank exactly had I not already achieved the high score of 0.14935 with rank 2527 global :sunglasses:).
