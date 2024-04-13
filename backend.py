@@ -4,7 +4,7 @@ class Model():
 
     def __init__(self, X, y, lr, epochs):
         self.X = X
-        self.y = y
+        self.y = y.reshape(-1, 1)
         self.m = self.X.shape[1]
         self.W = np.random.random((self.m, 1))
         self.b = np.random.random((1,))
@@ -18,6 +18,7 @@ class Model():
         return np.mean(np.square(self.predict(self.X) - self.y)) / 2
 
     def gradient(self):
+        #print(f"predict: {self.predict(self.X).shape}, true: {self.y.shape}")
         dW = np.mean(np.dot((self.predict(self.X) - self.y).T, self.X))
         db = np.mean(self.predict(self.X) - self.y)
         return dW, db
