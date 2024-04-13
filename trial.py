@@ -38,7 +38,7 @@ def loss_fn(y_pred, y):
 
 def dJ_dW(X, y_pred, y):
     m = y_pred.shape[0]
-    dJ = np.sum(np.dot((y_pred - y).T, X))
+    dJ = np.sum(np.dot((y_pred - y).T, X)) # 1x317 1460x317
     return dJ / m
 
 def dJ_db(y_pred, y):
