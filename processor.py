@@ -7,6 +7,6 @@ def get_processed(data):
     scaler = preprocessing.StandardScaler()
 
     X_scaled = scaler.fit_transform(X)
-    y_numpy = y.to_numpy().reshape(1, -1)
+    y_numpy = y.to_numpy().reshape(-1, 1)
 
     return X_scaled, y_numpy
