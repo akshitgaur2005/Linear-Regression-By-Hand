@@ -19,4 +19,4 @@ The meat of this project is contained in the backend.py file.
 - Predict function just return the dot product of weights and input and adds bias. The formula is - 
   $$\hat{Y} = \vec{X} \cdot \vec{W} + b$$
 - loss_fn returns the Mean Squared Error between the predictions ($\hat{Y}$) and the actual labels.
-  $$J_{(\vec{W}, b)} = (1/2m){\sum_{i=1}^m (\hat{y}^{(i)} - y^{(i)})^2}$$
+  $$J_{(\vec{W}, b)} = (\frac{1}{2m}){\sum_{i=1}^m (\hat{y}^{(i)} - y^{(i)})^2}$$
