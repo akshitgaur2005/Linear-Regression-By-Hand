@@ -19,4 +19,10 @@ The meat of this project is contained in the backend.py file.
 - Predict function just return the dot product of weights and input and adds bias. The formula is - 
   $$\hat{Y} = \vec{X} \cdot \vec{W} + b$$
 - loss_fn returns the Mean Squared Error between the predictions ($\hat{Y}$) and the actual labels.
-  $$J_{(\vec{W}, b)} = (\frac{1}{2m}){\sum_{i=1}^m (\hat{y}^{(i)} - y^{(i)})^2}$$
+  $$J_{(\vec{W}, b)} = \frac{1}{2m}{\sum_{i=1}^m (\hat{y}^{(i)} - y^{(i)})^2}$$
+- The gradient function returns the derivative of the cost function (loss_fn) with respect to weights ($\frac{dJ}{dW}$) and bias ($\frac{dJ}{db}$).
+  $$\frac{dJ}{dW} = \frac{1}{m} \sum_{i=1}^m (\hat{y}^(i) - y^(i))x_i$$
+  $$\frac{dJ}{db} = \frac{1}{m} \sum_{i=1}^m (\hat{y}^(i) - y^(i))$$
+- fit finally ties all of this together, iteratively modifying the weights so as to reduce the cost/loss.
+  $$\vec{W} = \vec{W} - \alpha \frac{dJ}{dW}$$
+  $$b = b - \alpha \frac{dJ}{db}$$
