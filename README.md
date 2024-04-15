@@ -10,3 +10,11 @@ Just me trying things out and keeping what works.
 :smiley: Though in all seriousness, this is very very unoptimised and I may return to it some other day to try my hand at optimisation but I neither have the energy nor the technical know-how to take an attempt at this.
 
 This model achieves a score of 0.66931 in House Price Prediction dataset which would give it nearly 4500 global rank (not too bad for a simple linear model, I would know the rank exactly had I not already achieved the high score of 0.14935 with rank 2527 global :sunglasses:).
+
+## Working
+
+The meat of this project is contained in the backend.py file.
+
+- We first initialise all the ingredients that we are going to need, input features and labels, weights and bias and learning rate and epochs to train for.
+- Predict function just return the dot product of weights and input and adds bias. The formula is - 
+  $$y = \vec{X} \cdot \vec{W} + b$$
