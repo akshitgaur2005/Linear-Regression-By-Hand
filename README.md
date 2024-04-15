@@ -17,4 +17,6 @@ The meat of this project is contained in the backend.py file.
 
 - We first initialise all the ingredients that we are going to need, input features and labels, weights and bias and learning rate and epochs to train for.
 - Predict function just return the dot product of weights and input and adds bias. The formula is - 
-  $$y = \vec{X} \cdot \vec{W} + b$$
+  $$\hat{Y} = \vec{X} \cdot \vec{W} + b$$
+- loss_fn returns the Mean Squared Error between the predictions ($\hat{Y}$) and the actual labels.
+  $$J_{(\vec{W}, b)} = \frac{\sum_{i=1}^m (\hat{y}^{(i)} - y^{(i)})^2}{2m}$$
